@@ -1,5 +1,7 @@
 # Discord Lightbearer Bot
 
+![Lightbearer Logo](./assets/basin.gif)
+
 A Discord bot designed to track cooldowns for Lightbearer events in the game. The bot notifies users in specific channels when cooldowns are nearing their end and provides commands to manage Lightbearers' status.
 
 ## Features
