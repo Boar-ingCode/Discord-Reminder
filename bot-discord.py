@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 import asyncio
 
 # Set the bot token
-TOKEN = "YOUR_TOKEN"
+TOKEN = "" ## replace it with the bot token
 
 # Initialize intents
 intents = discord.Intents.default()
@@ -28,8 +28,8 @@ class MyBot(commands.Bot):
         }
         self.cooldown_notified = {key: {'end': False, '1h': False, '30m': False, '15m': False, '5m': False} for key in self.command_timers}
         self.cooldown_duration = timedelta(hours=3)
-        self.channel_id = "Your_Chaneel_ID"  # Replace with the correct channel ID
-        self.status_channel_id = "Your_Chaneel_ID"  # Replace with the status update channel ID
+        self.channel_id = ''  # Replace with the correct channel ID
+        self.status_channel_id = ''  # Replace with the status update channel ID
         self.cooldown_messages = {}
 
     async def setup_hook(self):
@@ -104,7 +104,7 @@ class MyBot(commands.Bot):
                     # Log update to console
                     print(f"Updated time for {name} with remaining time: {formatted_time}")
 
-            await asyncio.sleep(60)
+            await asyncio.sleep(15)
 
 
 class LightbearerCog(commands.Cog):
